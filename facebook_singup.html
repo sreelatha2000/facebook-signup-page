@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        #inner{
+            width: 380px;
+            height: 450px;
+            background-color: aqua;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 100px;
+            left: 35vw;
+            box-shadow: 5px 5px 5px black;
+            background-color: white;
+        }
+        #mob{
+            width: 340px;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+            
+
+        }
+        #pass{
+            width: 340px;
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #first{
+            position: absolute;
+            left: 20px;
+            width: 160px;
+            top: 60px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #last{
+            position: absolute;
+            right: 20px;
+            width: 160px;
+            top: 60px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+            height: 30px;
+        }
+        #birth{
+            position: absolute;
+            top: 195px;
+            font-size: 13px;
+            left: 5px;
+            
+        }
+        #date{
+            position: absolute;
+            top: 220px;
+            left: 10px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #month{
+            position: absolute;
+            top: 220px;
+            left: 140px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #year{
+            position: absolute;
+            top: 220px;
+            left: 270px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #gender{
+            position: absolute;
+            top: 255px;
+            font-size: 13px;
+            left: 5px;
+            
+        }
+        h1{
+            position: absolute;
+            left: 5px;
+        }
+        p{
+            position: absolute;
+            left: 5px;
+            top: 35px;
+        }
+        #button{
+            width: 200px;
+            height: 40px;
+            background-color: green;
+            box-shadow: 3px 3px 3px black;
+            position: absolute;
+            bottom: 30px;
+            left: 85px;
+            border-radius: 10px;
+
+        }
+        #female{
+            position: absolute;
+            left: 10px;
+            top: 270px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #male{
+            position: absolute;
+            left: 140px;
+            top: 270px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+            width: 100px;
+        }
+        #custom{
+            position: absolute;
+            left: 270px;
+            top: 270px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #pre{
+            position: absolute;
+            left: 5px;
+            font-size: 12px;
+            top: 300px;
+        }
+        #cross{
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="outer" style="width:100vw ; height:100vh; background-color: rgb(230, 230, 235);">
+        <div id="inner">
+            <img src="./cross.png" id="cross" onclick="crossfun()" >
+            <h1>Sign Up</h1>
+            <p>it's quick and easy</p>
+            <input id="first" type="text" placeholder="First name">
+            <input id="last" type="text" placeholder="Last name">
+            <input id="mob" type="text" placeholder="Enter the mobile Number">
+            <input id="pass" type="text" placeholder="Enter your password">
+            <h6 id="birth">Date of birth</h6>
+            <select id="date">
+                <option >18</option>
+            </select>
+            <select id="month">
+             <option >Mar</option>
+                </select>
+            <select id="year">
+                 <option >2023</option>
+            </select>
+            <h6 id="gender">Gender</h6>
+            <input type="text" id="female" value="Female" >
+            <input type="text" id="male" value="Male">
+            <input type="text" id="custom" value="Custom">
+            <p id="pre">People who use our service may have uploaded your contact information to
+                Facebook.Learn more<br>
+                By clicking Sign Up you agree to our Terms Privacy Policy and Cookies Policy
+                You may receive SMS notifications from us and can opt out at any time.
+            </p>
+            <button id="button">Sign Up</button>
+        </div>
+    </div>
+    <script>
+ function crossfun(){
+            document.getElementById("inner").style.display="none";
+          
+       }
+        </script>
+    
+</body>
+</html>
